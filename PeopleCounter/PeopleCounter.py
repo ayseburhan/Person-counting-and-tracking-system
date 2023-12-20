@@ -3,6 +3,7 @@ import cv2
 import cvzone
 import math
 from sort import *
+from database import *
 cap = cv2.VideoCapture("Videos/people.mp4")  # Video dosyası
 
 
@@ -76,11 +77,11 @@ while True:
             if Id not in TotalCountDown:
                 TotalCountDown.append(Id)
                 cv2.line(img, (limitsDown[0], limitsDown[1]), (limitsDown[2], limitsDown[3]), (0, 255, 0), 5)
-
+        
         cvzone.cornerRect(img, (x1, y1, w, h), l=9, rt=2, colorR=(255, 0, 255))
         cv2.putText(img, str(int(Id)), (max(0, x1), max(35, y1)), cv2.FONT_HERSHEY_PLAIN, 2, (255, 255, 255), 2)
         cv2.circle(img, (cx, cy), 5, (255, 0, 255), cv2.FILLED)
-    
+
     cv2.putText(img, str(len(TotalCountUp)), (929, 345), cv2.FONT_HERSHEY_PLAIN, 5, (139, 195, 75), 7)
     cv2.putText(img, str(len(TotalCountDown)), (1191, 345), cv2.FONT_HERSHEY_PLAIN, 5, (50, 50, 230), 7)
     cv2.imshow("Image", img)
