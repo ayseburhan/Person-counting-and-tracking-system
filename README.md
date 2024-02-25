@@ -1,13 +1,14 @@
-# KİŞİ SAYMA VE İZLEME SİSTEMİ
-Bu projenin temel amacı, bir video dosyası üzerinde YOLO modeli ile nesne algılama yaparak insanları tespit etmek ve ardından bu tespit edilen insanları izlemek, takip etmek ve belirli bölgelerde geçişlerini saymak.
+# PERSON COUNTING AND TRACKING SYSTEM
+The main purpose of this project is to detect people on a video file using the YOLO model for object detection, and then track, follow, and count their transitions in specific areas.
 
-## Kullanılan Teknolojiler ve Araçlar:
+## Technologies and Tools Used:
 
--	Programlama Dili: Python
--	Kütüphaneler: Ultralytics, OpenCV, cvzone
--	Model: YOLO (You Only Look Once) nesne algılama modeli
--	Algoritmalar: SORT (Simple Online and Realtime Tracking)
--	IDE: Visual Studio Code 
--	Dosyalar ve Kaynaklar: Video dosyası, önceden eğitilmiş ağırlıklar (Yolo-Weights), mask.png gibi görsel kaynaklar
--	Video Kaynağı: Belirli bir alanda ya da ortamda çekilmiş bir video kaynağı (örneğin, bir güvenlik kamerasından gelen video).
--	Belirli Bölgelerin Koordinatları: İzleme veya sayım yapılacak bölgelerin koordinatları.
+
+- Programming Language: Python
+- Libraries: Ultralytics, OpenCV, cvzone
+- Model: YOLO (You Only Look Once) object detection model
+- Algorithms: SORT (Simple Online and Realtime Tracking)
+- IDE: Visual Studio Code
+- Files and Resources: Video file, pre-trained weights (Yolo-Weights), visual resources such as mask.png
+- Video Source: Video footage captured in a specific area or environment (e.g., footage from a security camera).
+- Coordinates of Specific Areas: Coordinates of the areas where tracking or counting will be performed.
